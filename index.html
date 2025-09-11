@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USing Html Properties</title>
-    <link rel="stylesheet" href="script.css">
+    <title>Form</title>
 </head>
+
 <body>
-    <h1>Properties</h1>
-    <img height="500" src="Narutoimage.png" alt="Nartuo">
-    <table>
-        <caption>Anime details </caption>
-        <tr>
-            <th>AnimeNAme</th>
-            <th>Type</th>
-            <th>Popularity</th>
-        </tr>
-        <tr>
-            <td>NAruto</td>
-            <td>Shounen</td>
-            <td>Member of Big 3</td>
-        </tr>
-        <tr>
-            <td>One piece</td>
-            <td>Shounen</td>
-            <td>Member of Big 3</td>
-        </tr>
-        <tr>
-            <td colspan="2">Lookism</td>
-            <td rowspan="2">Manwha</td>
-            <td>Popular worldwide</td>
-        </tr>
-    </table>
-    <ol type="A">
-        <li>Abhishek</li>
-        <li>Anshika</li>
-        <li>Kk</li>
-        <li>Priya</li>
-    </ol>
-    <ul type="square">
-        <li>Abhishek</li>
-        <li>Anshika</li>
-        <li>Kk</li>
-        <li>Priya</li>
-    </ul>
+    <h1>My first form</h1>
+    <form action="submit" method="post">
+        <div>
+            <label for="username"> Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username" autofocus>
+        </div>
+        <br><br>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+
+        <br><br>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <br><br>
+
+        <div>
+            <input type="checkbox" id="Subscribe" name="Subscribe" value="Yes">
+            <label for="Subscribe">Subscribe to PokemonAsia</label>
+        </div>
+        <br><br>
+        <div>
+            <label for="comment">Enter your comment here
+            </label>
+            <br><br>
+            <textarea name="comment" rows="4" cols="50">
+        </textarea>
+        </div>
+        <br><br>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
